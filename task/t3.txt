@@ -1,0 +1,6 @@
+hi, i am usama farooq and im using vim editor the first command is (i) i is lets you insert text whenever the cursor currently is. 
+then i press the wsc button for insertin out and use (o) for new line.
+and (:q!) command for a disagreed all changes to the file.
+and (:x) command for save and exit out of a file.
+ "this is some necessary command for using vim editor" 
+"using vim editor is look easy but little bit diffecult for new person who usea first time "

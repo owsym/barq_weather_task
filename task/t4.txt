@@ -1,0 +1,7 @@
+hi i am usama faroq and now im using a nano command line text editor,
+here is a some necessary command for nano editor.
+ ctrl+g for a display the menu.
+ctrl+x for exit nno.
+ctrl+o for A save the current file.
+ "i think the nano editor is more easier then vim"
+ 
