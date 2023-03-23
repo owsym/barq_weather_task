@@ -1,9 +1,11 @@
-def get_file_content(file_content):
-    files_data = []
+def get_file_content(file_path):
+    files_contents = []
 
-    with open(file_content) as read_content:
-        content = read_content.read()
-        for data in content.split("\n")[1:-1]:
-            files_data.append(data.split(","))
+    with open(file_path) as file_reader:
+        content = file_reader.read()
 
-    return files_data
+        for line_value in content.split("\n")[1:-1]:
+            colum_value = line_value.split(",")
+            files_contents.append(colum_value)
+
+    return files_contents
