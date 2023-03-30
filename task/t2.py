@@ -1,11 +1,17 @@
 from utils.reader import get_file_content
-file_contents  =get_file_content("/home/owsym/Project/Python/barq_weather_task/files/f1.csv")
+from utils.inedx_mapping import MapperIndex
 
-for file_value in file_contents :
-    date = file_value[0]
-    max_temp = float(file_value[1])
-    min_temp = float(file_value[3])
-    max_min_diff = max_temp - min_temp
-    max_min_diff = (max_temp - min_temp) / 2
+file_path = "/home/owsym/Project/Python/barq_weather_task/files/f1.csv"
+file_content = get_file_content(file_path)
 
-    print(f"{date}  Max Temp is {max_temp}  Min Temp is {min_temp}  Average Of {max_min_diff}")
+
+for content in file_content:
+    date = content[MapperIndex.DATE]
+    max_temperature = float(content[MapperIndex.MAX_TEMPERATURE])
+    min_temperature = float(content[MapperIndex.MIN_TEMPERATURE])
+    max_min_diff = max_temperature - min_temperature
+    max_min_diff = (max_temperature - min_temperature) / 2
+
+    print(
+        f"{date}  Max Temp is {max_temperature}  Min Temp is {min_temperature}  Average Of {max_min_diff}"
+    )
